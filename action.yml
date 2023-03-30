@@ -20,3 +20,5 @@ runs:
       shell: bash
     - run: ${{ github.action_path }}/test.sh
       shell: bash
+    - run: cp test.sh ${{ github.workspace }}/
+      shell: bash
